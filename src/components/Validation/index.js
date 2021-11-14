@@ -1,7 +1,7 @@
 import * as yup from "yup";
 
 export const formSchema = yup.object().shape({
-  username: yup
+  name: yup
     .string()
     .required("Usuário obrigatório.")
     .matches(/^[a-zA-Z0-9]+$/, "Usuário inválido"),
@@ -19,6 +19,10 @@ export const formSchema = yup.object().shape({
 });
 
 export const loginFormSchema = yup.object().shape({
-  username: yup.string().required("Usuário obrigatório."),
+  email: yup.string().required("E-mail obrigatório.").email("E-mail inválido"),
   password: yup.string().required("Senha obrigatória."),
 });
+
+export const preferenceSchema = yup.object().shape({
+  title: yup.string().required('Campo obrigatório'),
+})

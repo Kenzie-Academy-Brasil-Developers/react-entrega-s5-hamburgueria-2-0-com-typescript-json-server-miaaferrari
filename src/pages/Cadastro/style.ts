@@ -130,6 +130,10 @@ export const FormBox = styled.div`
             line-height: 28px;
             border: none;
             margin: 5px 0;
+
+            :hover {
+                border: 2px solid var(--grey-600);
+            }
         }
     }
 `;

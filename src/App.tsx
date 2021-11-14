@@ -1,10 +1,8 @@
 import GlobalStyled from "./styles/global";
-// import Routes from "./routes";
+import { Routes } from "./routes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { Header } from "./components/Header";
-// import { Login } from "./pages/Login";
-import { Cadastro } from "./pages/Cadastro";
+
 
 function App() {
   return (
@@ -21,7 +19,7 @@ function App() {
         draggable
         pauseOnHover
       />
-      <Cadastro />
+      <Routes />
     </div>
   );
 }

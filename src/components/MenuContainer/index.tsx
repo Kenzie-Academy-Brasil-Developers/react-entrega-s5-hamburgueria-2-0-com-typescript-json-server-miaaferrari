@@ -1,4 +1,4 @@
-import { Product } from "../Product/index";
+import { Card } from "../Card/index";
 
 export const MenuContainer = () => {
 
